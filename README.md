@@ -5,6 +5,8 @@
 
 ## Setup
 `pip install ansible[azure]`
+* `DEMO` resource group
 
 ## Usage
-* ansible-vault password `ch@nge-M3`
+* ansible-vault  `ch@nge-M3`
+* 

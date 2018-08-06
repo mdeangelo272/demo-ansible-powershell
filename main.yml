@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  vars_files: 
+    - vars/common.yml
+    - vars/vault
+  tasks:
+    - import_tasks: tasks/create_linux_vm.yml
+    - import_tasks: tasks/create_windows_vm.yml
