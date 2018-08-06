@@ -2,9 +2,9 @@
 - hosts: localhost
   connection: local
   gather_facts: false
-  vars: 
-    my_group: demos
-    my_user: demo
+  vars_files: 
+    - vars/common.yml
+    - vars/vault
   tasks:
     - name: Create VM
       azure_rm_virtualmachine:
