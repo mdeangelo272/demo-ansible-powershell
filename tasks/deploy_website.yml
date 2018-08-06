@@ -10,4 +10,4 @@
     name: Demo
     state: started
     port: 80
-    physical_path: C:\inetpub\wwwroot\demo
+    physical_path: "{{ website.path }}"

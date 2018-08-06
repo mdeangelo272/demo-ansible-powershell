@@ -7,7 +7,7 @@ my_ssh_pub_key_path: ~/.ssh/id_rsa.pub
 
 # Windows and Windows VM settings
 windows:
-  vm_name: ansibleDemoWin
+  vm_name: ansibleDemoWin01
   vm_size: Standard_B2s
   image:
     offer: WindowsServer
@@ -15,9 +15,12 @@ windows:
     sku: 2016-Datacenter
     version: latest
 
+website:
+  path: "C:\\inetpub\\wwwroot\\demo"
+
 # Linux and Linux VM settings
 linux:
-  vm_name: ansibleDemoLinux
+  vm_name: ansibleDemoLinux01
   vm_size: Standard_B1s
   image:
     offer: UbuntuServer
