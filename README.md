@@ -2,3 +2,6 @@
 
 ## Intro
  #todo
+
+## Setup
+`pip install ansible[azure]`

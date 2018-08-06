@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  vars: 
+    my_group: demos
+    my_user: demo
+  tasks:
+    - name: Create VM
+      azure_rm_virtualmachine:
+        resource_group: "{{ my_group }}"
+        name: ansibledemo1
+        vm_size: Standard_B1s
+        admin_username: "{{ my_user }}"
+        ssh_password_enabled: false
+        ssh_public_keys: 
+          - path: "/home/{{ my_user }}/.ssh/authorized_keys"
+            key_data: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        image:
+          offer: UbuntuServer
+          publisher: Canonical
+          sku: 18.04-LTS
+          version: latest
