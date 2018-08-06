@@ -27,12 +27,17 @@ git clone -b meetup_denver https://github.com/mdeangelo272/demo-ansible-powershe
 cd demo-ansible-powershell
 ```
 
+### Create a VM in Azure
 Execute The Playbook
 ```
-ansible-playbook --ask-vault-pass main.yml
+ansible-playbook main.yml --tags 'windows'
 ```
 
-You will be asked for the Vault password it stores the password for the Windows administrator. For this demo the Ansible Vault password is `ch@nge-M3`. **Never** store unencypted sensitive information in version control for live systems. 
+To create a windows VM use the 'windows' tag. To create a Linux VM use the 'linux' tag. 
+
+
+### Configure the VM
+ #todo: discuss this
 
 
 ## Local Setup 

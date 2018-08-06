@@ -7,8 +7,8 @@ my_ssh_pub_key_path: ~/.ssh/id_rsa.pub
 
 # Windows and Windows VM settings
 windows:
-  vm_name: mkdWin1
-  vm_size: Standard_B1s
+  vm_name: ansibleDemoWin
+  vm_size: Standard_B2s
   image:
     offer: WindowsServer
     publisher: MicrosoftWindowsServer
