@@ -32,6 +32,8 @@
     * Desired State Config Execution
     * IIS configurations
 
+---
+
 ## Ansible in Azure
 * Ansible can configure cloud infrastructure in Azure
 * the Azure Shell natively supports Ansible using Windows Subsystem for Linux
