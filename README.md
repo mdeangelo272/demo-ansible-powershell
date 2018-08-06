@@ -7,7 +7,7 @@
 
 
 ## Usage
-Create a Resource Group in Azure called `DEMO`.
+Create a Resource Group in Azure called `demos`.
 
 Login into the [Azure Shell](https://shell.azure.com)
 * Select `PowerShell`
