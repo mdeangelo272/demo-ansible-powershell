@@ -1,0 +1,8 @@
+# vim
+*.sw*
+
+# ansible
+*.retry
+
+# ignorables
+ignore/
