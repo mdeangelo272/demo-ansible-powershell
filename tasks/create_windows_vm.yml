@@ -5,6 +5,7 @@
     vm_size: "{{ windows.vm_size }}"
     admin_username: "{{ my_user }}"
     admin_password: "{{ my_password }}"
+    os_type: Windows
     image:
       offer: "{{ windows.image.offer }}"
       publisher: "{{ windows.image.publisher }}"

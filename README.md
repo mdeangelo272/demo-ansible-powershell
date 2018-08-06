@@ -43,3 +43,7 @@ You will be asked for the Vault password it stores the password for the Windows 
 * instal ansible 2.4+ (2.6 preferred)
 * must install ansible azure dependencies
 `pip install ansible[azure]`
+
+## raw notes
+* to bootstrap windows server run the `bootstrap_winrm.ps1` script on the Windows Server (Assumes you have the latest version of Windows Server 2016)
+    * (should probably be done with machine images)
