@@ -6,5 +6,5 @@
     - vars/common.yml
     - vars/vault
   tasks:
-    - import_tasks: tasks/create_linux_vm.yml
+    #- import_tasks: tasks/create_linux_vm.yml
     - import_tasks: tasks/create_windows_vm.yml
